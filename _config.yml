@@ -17,14 +17,14 @@ markdown: kramdown
 # Social media links in footer
 # facebook: "#"
 # twitter: "#"
-linkedin: "lorenzocarnevale"
-github: "lcarnevale"
+linkedin: "thisisrahulg"
+github: "thisisrahulg"
 # researchgate: "#"
-orcid: "0000-0002-1349-341X"
-google_analytics: "G-V0TBR5PTVH"
-scopus: "57195963279"
-google_scholar: "_5EzmTwAAAAJ&hl=it"
-flickr: "lorenzocarnevale"
+orcid: "0000-0002-1282-3480"
+  #google_analytics: "G-V0TBR5PTVH"
+  #scopus: "57195963279"
+  #google_scholar: "_5EzmTwAAAAJ&hl=it"
+  #flickr: "lorenzocarnevale"
 
 
 # highlighter: rouge
