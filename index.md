@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: home
+title: Home
 ---
 
-Welcome!
-
-[View my CV](/personal_cv/)
+Welcome to my portfolio. Here you will find my latest projects and work.

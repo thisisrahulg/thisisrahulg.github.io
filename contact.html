@@ -1,0 +1,39 @@
+---
+layout: default
+title: Contact Me
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css?v=" | replace: "ColorScheme", site.color-scheme | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  <link rel="preload" href="{{ site.logo | relative_url }}" as="image">
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+  {% include head-custom.html %}
+</head>
+<body>
+  <main>
+    <div class="content-container">
+      <h1>Contact Me</h1>
+      <div class="contact-info">
+        <p><strong>Rahul Gopalakrishnan</strong></p>
+        <p>Inter University Centre for Astronomy and Astrophysics</p>
+        <p>Post Bag- 4, Ganeshkind,</p>
+        <p>Pune, Maharashtra - 411007</p>
+        <p>Email: <a href="mailto:rahulg.astro@gmail.com">rahulg.astro@gmail.com</a></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    {% include footer.html %}
+  </footer>
+  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+</body>
+</html>

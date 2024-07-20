@@ -1,0 +1,61 @@
+{% case site.color-scheme %}
+  {% when "", nil, false, 0, empty %}
+    {% assign ColorScheme = "auto" %}
+  {% else %}
+    {% assign ColorScheme = site.color-scheme %}
+{% endcase %}
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/colors-ColorScheme.css?v=' | replace: 'ColorScheme', ColorScheme | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="preload" href="{{ site.logo | relative_url }}" as="image">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+  {% include head-custom.html %}
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      {% if site.photo %}
+        <img class="profile-photo img-rounded-square" src="{{ site.photo | relative_url }}" alt="Profile Photo">
+      {% endif %}
+
+      {% if site.logo %}
+        <img class="img-circle" src="{{ site.logo | relative_url }}" alt="Logo">
+      {% endif %}
+
+      <h1>{{ site.title | default: site.github.repository_name }}</h1>
+      <p>{{ site.description | default: site.github.project_tagline }}</p>
+      <div class="social-links">
+        {% for link in site.social_links %}
+          <a href="{{ link.url }}" target="_blank"><i class="{{ link.icon }}"></i> </a>
+        {% endfor %}
+      </div>
+    </header>
+    <main class="main-content">
+      <hr class="separator">
+      <div class="nav-links">
+        {% for link in site.nav_links %}
+          <a href="{{ link.url | relative_url }}"> {{ link.name}}</a>
+        {% endfor %}
+      </div>
+    </main>
+    <footer>
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
+    </footer>
+  </div>
+  <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+</body>
+</html>

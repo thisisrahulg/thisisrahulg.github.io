@@ -1,4 +1,220 @@
 ---
 ---
 
-@import "jekyll-theme-minimal";
+@import "jekyll-theme-minimalist";
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+
+.header {
+  padding: 2rem 0;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.header .profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px; /* Adjust to create rounded square corners */
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  margin-bottom: 2rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 2rem; /* Adjusted font size */
+}
+
+.social-links a i {
+  margin-right: 0.5rem;
+
+}
+
+.main-content {
+  padding: 0.5rem 0;
+}
+
+.nav-links {
+  margin-top: 5rem; /* Add more space above the links */
+}
+
+.nav-links a {
+  display: block;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: #007acc;
+  font-size: 1.2rem;
+}
+
+.separator {
+  border: 0;
+  height: 1px;
+  background: #333;
+  margin: 0.5rem auto 2rem; /* Adjusted separator size and added more margin at the top */
+  width: 80%;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background: #f8f8f8;
+}
+
+
+/* Blog Container */
+.blog-container {
+  padding: 20px;
+}
+
+
+
+// 
+
+
+.img-circle {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px; 
+    margin-bottom: 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.popup .content {
+  padding-right: 20px;
+  max-height: 30%;
+  overflow: auto;
+  font: 15px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Navbar Style */
+.top-navbar {
+  display: flex;
+  justify-content: center; /* Center-align the top-navbar items horizontally */
+  padding: 1rem 0; /* Adjust padding as needed */
+}
+
+.top-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ensure the list items are displayed in a row */
+}
+
+.top-navbar li {
+  
+  margin: 0 1rem; /* Adjust margin between top-navbar items */
+}
+
+.top-navbar a {
+  text-decoration: none;
+  color: #007acc;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem; /* Adjust padding around links */
+  display: inline-block; /* Ensure padding is applied correctly */
+}
+
+.top-navbar a:hover {
+  color: #0056b3;
+  
+}
+
+/* Additional Styles for Content Container */
+.content-container {
+  display: block;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background: #f8f8f8;
+}
+
+
+
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+  nav ul {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .content-container {
+    width: 95%;
+  }
+
+
+

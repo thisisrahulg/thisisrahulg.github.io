@@ -1,10 +1,42 @@
-title: thisisrahulg@web ~ $
-logo: /assets/img/logo.png
-description: Rahul Gopalakrishnan
-show_downloads: true
 google_analytics:
-theme: jekyll-theme-minimal
+color-scheme: auto
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
+title: "Rahul Gopalakrishnan"
+author: "Rahul Gopalakrishnan"
+description: "Sofware Engineer | Science Ethusiast | Speed Cuber | I Use Arch BTW"
+lang: "en-US"
+
+social_links:
+  - name: GitHub
+    url: "https://github.com/thisisrahulg"
+    icon: "fab fa-github"
+  - name: LinkedIn
+    url: "https://www.linkedin.com/in/thisisrahulg"
+    icon: "fab fa-linkedin"
+  - name: Google Scholar
+    url: "https://scholar.google.com/citations?hl=en&user=CuyT-6YAAAAJ"
+    icon: "fas fa-graduation-cap"
+
+nav_links:
+  - name: Blog
+    url: "/blog/"
+  - name: Gallery
+    url: "/gallery/"
+  - name: Publications
+    url: "/publications/"
+  - name: About
+    url: "/about/"
+  - name: Contact Me
+    url: "/contact/"
+
+photo: "/assets/img/profilepic.png"
+
+
 
 collections:
-  pages:
+  blog:
     output: true
+    permalink: /blog/:title/
